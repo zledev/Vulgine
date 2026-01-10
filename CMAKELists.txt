@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.16)
+project(Vulgine LANGUAGES CXX)
+
+add_executable(vulgine
+    Src/main.cpp
+)
+
+find_package(glfw3 CONFIG REQUIRED)
+target_link_libraries(Vulgine PRIVATE glfw)
